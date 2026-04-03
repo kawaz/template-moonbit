@@ -1,0 +1,17 @@
+{
+  "name": "kawaz/project-name",
+  "version": "0.1.0",
+  "source": "src",
+  "readme": "README.md",
+  "repository": "https://github.com/kawaz/project-name",
+  "license": "MIT",
+  "keywords": [],
+  "description": "TODO: project description",
+  "exclude": [
+    "docs",
+    "justfile",
+    "**/*_test.mbt",
+    "**/*_wbtest.mbt",
+    "**/*_wbbench.mbt"
+  ]
+}
