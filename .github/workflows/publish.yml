@@ -8,11 +8,8 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Install MoonBit
-        run: |
-          curl -fsSL https://cli.moonbitlang.com/install/unix.sh | bash
-          echo "$HOME/.moon/bin" >> $GITHUB_PATH
+      - uses: actions/checkout@v5
+      - uses: chawyehsu/setup-moonup@v1
       - run: moon publish --dry-run
       - name: Publish to mooncakes.io
         run: |
@@ -28,7 +25,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Create release
         env:
           GH_TOKEN: ${{ github.token }}

@@ -1,6 +1,6 @@
 # AI 設計判断の記録
 
-設計的な判断をした場合は `docs/decision-records/` に記録する。
+設計的な判断をした場合は `docs/decisions/` に記録する。
 
 ## 対象
 
