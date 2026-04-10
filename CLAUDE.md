@@ -35,7 +35,7 @@ docs/               # ドキュメント
   - `*_test.mbt` — ブラックボックステスト（公開 API）
   - `*_wbtest.mbt` — ホワイトボックステスト（内部 API）
   - `*_wbbench.mbt` — ベンチマーク
-- スナップショットテスト: `inspect!(val, content="...")`
+- スナップショットテスト: `inspect(val, content="...")`
 - `just ci` を通してから push
 - push は `just push` を使う（直接 push は hook でブロック）
 - リリースは `just release` で自動化
